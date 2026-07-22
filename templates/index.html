@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Phishing Email Detector</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📧 Phishing Email Detection</h1>
+<h3>Model Accuracy : {{ accuracy }}</h3>
+
+<form method="POST">
+
+<textarea
+name="email"
+placeholder="Paste Email Here..."
+required>{{ email }}</textarea>
+
+<br>
+
+<button type="submit">
+
+Detect Email
+
+</button>
+
+<a href="/">
+
+<button type="button">
+
+Clear
+
+</button>
+
+</a>
+
+</form>
+
+{% if prediction %}
+
+<div class="result">
+
+{% if prediction == "SAFE" %}
+
+<h2 style="color:green;">
+✅ SAFE EMAIL
+</h2>
+
+{% else %}
+
+<h2 style="color:red;">
+⚠️ PHISHING EMAIL
+</h2>
+
+{% endif %}
+
+<h3>Confidence : {{ confidence }}%</h3>
+
+<h3>URLs Found : {{ url_count }}</h3>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
