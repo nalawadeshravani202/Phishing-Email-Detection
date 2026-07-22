@@ -2,9 +2,4 @@ venv/
 __pycache__/
 *.pyc
 
-model/
-dataset/processed/
-
 results/
-
-*.pkl
