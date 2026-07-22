@@ -258,19 +258,13 @@ SAFE
 
 ---
 
-# 👩‍💻 Author
+## 👩‍💻 Author
 
 **Shravani Nalawade**
 
-Diploma in Information Technology
-
-Machine Learning & Cybersecurity Enthusiast
-
-GitHub:
-https://github.com/nalawadeshravani202
+- GitHub: https://github.com/nalawadeshravani202
+- LinkedIn: https://www.linkedin.com/in/shravani-sachin-nalawade-795b24322/
 
 ---
 
-# ⭐ If you like this project
-
-Please consider giving it a ⭐ on GitHub.
+## ⭐ If you found this project useful, consider giving it a star.
